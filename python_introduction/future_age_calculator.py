@@ -1,7 +1,7 @@
 
 # Variable define to receive user current age
 
-current_age = int(input(" How old are you? "))
+current_age = int(input("How old are you?"))
 
 
 # User future age operation
