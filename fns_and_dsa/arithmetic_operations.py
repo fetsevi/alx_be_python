@@ -3,7 +3,7 @@
 num1=0
 num2=0
 operation=''
-def perform_operation(num1: float, num2: float, operation: str):
+def perform_operation(num1, num2, operation):
     if num2==0 and operation=='divide':
         print("Cannot divide by zero")
     elif num2!=0 and operation=='divide': return num1/num2
