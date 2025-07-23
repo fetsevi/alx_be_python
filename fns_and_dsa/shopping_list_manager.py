@@ -16,8 +16,8 @@ def main():
         display_menu()  # call of display_menu function
         choice=input("Enter your choice: ")
         if choice=='1':
-            add_item=input("Item name to add: ")
-            shopping_list.append(add_item)
+            item=input("Enter the item to add: ")
+            shopping_list.append(item)
         elif choice=='2':
             remove_item=input("Enter item to remove: ")
             if remove_item in shopping_list:
