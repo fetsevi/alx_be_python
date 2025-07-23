@@ -5,18 +5,15 @@ num2=0
 operation=''
 def perform_operation(num1, num2, operation):
     
-    #if num2==0:
-    #    if operation=='divide':
-  #        print("Cannot divide by zero")
-    if num2!=0 and operation=='divide': return num1/num2
-    elif operation=='add': return num1+num2
-    elif operation=='subtract': return num1-num2
-    elif operation=='multiply': return num1*num2
-    #elif num2==0 and operation=='divide': return print("Error cannot be divided by 0")
-    #elif num2!=0 and operation=='divide': return num1/num2
+    # operations
 
-    #else: return print("Unknown operator")
+
+    if operation=='add': return num1+num2              # Addition operation
+    elif operation=='subtract': return num1-num2       # Sbstraction operation
+    elif operation=='multiply': return num1*num2       # Multiplication operation
     
+    # Division function
+
     def divide(num1: float, num2: float) -> float:
       if num2 == 0:
         raise ValueError("Cannot divide by zero.")
