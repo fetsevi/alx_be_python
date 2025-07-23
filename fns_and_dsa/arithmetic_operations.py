@@ -13,5 +13,10 @@ def perform_operation(num1, num2, operation):
     elif operation=='multiply': return num1*num2
     #elif num2==0 and operation=='divide': return print("Error cannot be divided by 0")
     #elif num2!=0 and operation=='divide': return num1/num2
-    
+
     else: return print("Unknown operator")
+
+    def divide(num1: float, num2: float) -> float:
+      if num2 == 0:
+        raise ValueError("Cannot divide by zero.")
+    return num1 / num2
