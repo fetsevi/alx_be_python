@@ -4,8 +4,9 @@ num1=0
 num2=0
 operation=''
 def perform_operation(num1, num2, operation):
-    if num2==0 and operation=='divide':
-        print("Cannot divide by zero")
+    if num2==0:
+        if operation=='divide':
+          print("Cannot divide by zero")
     elif num2!=0 and operation=='divide': return num1/num2
     elif operation=='add': return num1+num2
     elif operation=='subtract': return num1-num2
