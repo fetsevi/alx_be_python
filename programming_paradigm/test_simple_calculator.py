@@ -13,7 +13,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.add(-1, 1), 0)
         self.assertEqual(self.calc.add(-4, -5), -9)
 
-    def tes_subtraction(self):
+    def test_subtraction(self):
         """Test the substraction method."""
         self.assertEqual(self.calc.subtract(9, 6), 3)
         self.assertEqual(self.calc.subtract(-2, 3), -5)
@@ -24,7 +24,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(3, 5), 15)
         self.assertEqual(self.calc.multiply(-3, 4), -12)
         self.assertEqual(self.calc.multiply(-3, -2), 6)
-        
+
     def test_divide(self):
         """Test the division method."""
         self.assertEqual(self.calc.divide(9, 3), 3)
