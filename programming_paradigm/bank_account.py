@@ -7,12 +7,10 @@ class BankAccount:
         self.account_balance = account_balance
 
     # Method deposit
-
     def deposit(self, amount):
         self.account_balance += amount
 
     # Method withdraw
-
     def withdraw(self, amount):
         if self.account_balance >= amount:
             self.account_balance -= amount
@@ -21,7 +19,6 @@ class BankAccount:
             return False
         
     # Method display
-
     def display_balance(self):
-        print(f"Current balance: ${self.account_balance}")
+        print(f"Current Balance: ${self.account_balance}")
 
