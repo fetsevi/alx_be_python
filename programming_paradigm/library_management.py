@@ -16,20 +16,20 @@ class Book:           # Define class
     
 class Library:
     def __init__(self):
-        self.__books = []             # Private attribute to hold Book object
+        self._books = []             # Private attribute to hold Book object
 
     def add_book(self, book):
-        self.__books.append(book)         # Add Book instance to the library
+        self._books.append(book)         # Add Book instance to the library
 
     def check_out_book(self, title):  # Checks out the book with the given title if available
-        for book in self.__books:
+        for book in self._books:
             if book.title == title and not book.is_checked_out():
                 book.check_out()
                 return
         print(f"Book {title} isn't available for chek out")
 
     def return_book(self, title):
-        for book in self.__books:
+        for book in self._books:
             if book.title == title and book.is_checked_out():
                 book.return_book()
                 return
@@ -37,7 +37,7 @@ class Library:
     
     def list_available_books(self):
         available = False
-        for book in self.__books:
+        for book in self._books:
             if not book.is_checked_out():
                 print(f"{book.title} by {book.author}")
                 available = True
