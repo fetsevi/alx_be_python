@@ -1,0 +1,21 @@
+# POLYMORPHISM METHOD
+import math
+
+class Shape:
+    def area(self):
+
+        raise NotImplementedError("Subclasses must override the area() method")
+    
+class Rectangle(Shape):
+    def __init__(self, length, widgth):
+        self.length = length
+        self.widgth = widgth
+    def area(self):
+        return self.length*self.widgth
+    
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+    def area(self):
+        return math.pi*pow(self.radius, 2)
+
